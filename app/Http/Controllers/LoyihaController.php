@@ -13,7 +13,7 @@ class LoyihaController extends Controller
      */
     public function index()
     {
-        $loyihalar = Loyiha::all();
+        $loyihalar = Loyiha::orderBy('id', 'DESC')->get();
 
 
         return Inertia::render('Loyiha/index', [

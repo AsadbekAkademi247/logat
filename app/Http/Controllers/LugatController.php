@@ -15,8 +15,7 @@ class LugatController extends Controller
      */
     public function index(): \Inertia\Response
     {
-        $lugatlar = Lugat::all();
-
+        $lugatlar = Lugat::orderBy('id', 'DESC')->get();
 
         return Inertia::render('Lugat/index', [
             'title' => ' a',

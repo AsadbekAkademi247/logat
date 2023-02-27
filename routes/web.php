@@ -36,6 +36,7 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
+
     Route::get('/dashboard', function () {
         return  redirect()->to('/lugat');
 //        return Inertia::render('Dashboard');

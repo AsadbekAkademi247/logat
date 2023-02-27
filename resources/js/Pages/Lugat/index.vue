@@ -21,7 +21,6 @@ function destroy(id) {
                 Lugat
             </h2>
         </template>
-
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
@@ -59,7 +58,7 @@ function destroy(id) {
                                             class="border-b dark:border-neutral-500">
                                             <td class="whitespace-nowrap  px-6 py-4 font-medium">{{ value.id }}</td>
                                             <td class="whitespace-nowrap  px-6 py-4">{{ value.antro }}</td>
-                                            <td class="whitespace-nowrap  px-6 py-4">{{ value.manosi }}</td>
+                                            <td class="px-6 py-4 overflow-hidden text-center">{{ value.manosi }}</td>
                                             <td class="whitespace-nowrap  px-6 py-4">
                                                 <Link :href="route('lugat.edit', value.id)">
                                                     <button type="submit"
