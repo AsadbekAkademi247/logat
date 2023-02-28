@@ -52,7 +52,7 @@ const logout = () => {
 
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                                 <NavLink :href="route('loyihe.index')" :active="route().current('loyihe.index')">
-                                    Loyihe
+                                    Sahiyfalar
                                 </NavLink>
                             </div>
                         </div>
